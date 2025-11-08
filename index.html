@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="./assets/images/spa-treatment.jpg">
+    <link rel="preload" as="image" href="./assets/images/botox-fillers.jpg">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Cosmopolitan Beauty Lounge | Premium Medispa in Bexley NSW</title>
     
@@ -207,7 +210,7 @@
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-image-wrapper">
-                        <img src="./assets/images/spa-treatment.jpg" alt="Luxury Spa Treatment" class="service-image" width="600" height="400" loading="lazy">
+                        <img src="./assets/images/spa-treatment.jpg" alt="Luxury Spa Treatment" class="service-image" width="600" height="400" loading="eager" fetchpriority="high" decoding="async">
                         <div class="service-badge">Most Popular</div>
                     </div>
                     <div class="service-content">
@@ -225,7 +228,7 @@
 
                 <div class="service-card">
                     <div class="service-image-wrapper">
-                        <img src="./assets/images/botox-fillers.jpg" alt="Botox and Dermal Fillers" class="service-image" width="600" height="400" loading="lazy">
+                        <img src="./assets/images/botox-fillers.jpg" alt="Botox and Dermal Fillers" class="service-image" width="600" height="400" loading="eager" fetchpriority="high" decoding="async">
                     </div>
                     <div class="service-content">
                         <h3>Botox & Dermal Fillers</h3>
@@ -242,7 +245,7 @@
 
                 <div class="service-card">
                     <div class="service-image-wrapper">
-                        <img src="./assets/images/skin-tightening.jpg" alt="Skin Tightening HIFU Treatment" class="service-image" width="600" height="400" loading="lazy">
+                        <img src="./assets/images/skin-tightening.jpg" alt="Skin Tightening HIFU Treatment" class="service-image" width="600" height="400" loading="lazy" decoding="async">
                     </div>
                     <div class="service-content">
                         <h3>Skin Tightening (HIFU)</h3>
@@ -259,7 +262,7 @@
 
                 <div class="service-card">
                     <div class="service-image-wrapper">
-                        <img src="./assets/images/teeth-whitening.jpg" alt="Professional Teeth Whitening" class="service-image" width="600" height="400" loading="lazy">
+                        <img src="./assets/images/teeth-whitening.jpg" alt="Professional Teeth Whitening" class="service-image" width="600" height="400" loading="lazy" decoding="async">
                     </div>
                     <div class="service-content">
                         <h3>Professional Teeth Whitening</h3>
@@ -276,7 +279,7 @@
 
                 <div class="service-card">
                     <div class="service-image-wrapper">
-                        <img src="./assets/images/body-contour.jpg" alt="Body Contouring and Sculpting" class="service-image" width="600" height="400" loading="lazy">
+                        <img src="./assets/images/body-contour.jpg" alt="Body Contouring and Sculpting" class="service-image" width="600" height="400" loading="lazy" decoding="async">
                         <div class="service-badge">New</div>
                     </div>
                     <div class="service-content">
@@ -313,31 +316,31 @@
             
             <div class="gallery-grid">
                 <div class="gallery-item gallery-item-large">
-                    <img src="./assets/images/gallery-1.jpg" alt="Reception Area" class="gallery-image" width="800" height="600" loading="lazy">
+                    <img src="./assets/images/gallery-1.jpg" alt="Reception Area" class="gallery-image" width="800" height="600" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <span class="gallery-label">Reception Area</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="./assets/images/gallery-2.jpg" alt="Treatment Room" class="gallery-image" width="600" height="600" loading="lazy">
+                    <img src="./assets/images/gallery-2.jpg" alt="Treatment Room" class="gallery-image" width="600" height="600" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <span class="gallery-label">Treatment Room</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="./assets/images/gallery-3.jpg" alt="Relaxation Lounge" class="gallery-image" width="600" height="600" loading="lazy">
+                    <img src="./assets/images/gallery-3.jpg" alt="Relaxation Lounge" class="gallery-image" width="600" height="600" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <span class="gallery-label">Relaxation Lounge</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="./assets/images/gallery-4.jpg" alt="Advanced Equipment" class="gallery-image" width="600" height="600" loading="lazy">
+                    <img src="./assets/images/gallery-4.jpg" alt="Advanced Equipment" class="gallery-image" width="600" height="600" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <span class="gallery-label">Advanced Equipment</span>
                     </div>
                 </div>
                 <div class="gallery-item gallery-item-wide">
-                    <img src="./assets/images/gallery-5.jpg" alt="VIP Suite" class="gallery-image" width="800" height="600" loading="lazy">
+                    <img src="./assets/images/gallery-5.jpg" alt="VIP Suite" class="gallery-image" width="800" height="600" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <span class="gallery-label">VIP Suite</span>
                     </div>

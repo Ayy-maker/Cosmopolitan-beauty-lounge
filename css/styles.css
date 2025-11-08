@@ -707,7 +707,7 @@ ul {
     right: 0;
     bottom: 0;
     background: url('../assets/images/hero-bg.jpg') center/cover no-repeat;
-    background-attachment: fixed;
+    will-change: transform;
 }
 
 .hero-overlay {
