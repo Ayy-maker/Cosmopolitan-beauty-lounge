@@ -1124,9 +1124,10 @@ ul {
 .service-image {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
     transition: transform 0.5s ease;
+    display: block;
 }
 
 .service-card:hover .service-image {
@@ -1276,9 +1277,10 @@ ul {
 .gallery-image {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
     transition: transform 0.5s ease;
+    display: block;
 }
 
 .gallery-item:hover .gallery-image {
