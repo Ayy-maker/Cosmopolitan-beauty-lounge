@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6b938c">
+    <link rel="icon" type="image/png" href="./assets/images/a.png">
+    <link rel="apple-touch-icon" href="./assets/images/a.png">
     <meta name="description" content="Cosmopolitan Beauty Lounge - Premium Medispa in Bexley NSW. Anti-Ageing, Body Sculpting, Botox & Fillers, Skin Tightening, Teeth Whitening. Medical grade technology. Male friendly.">
     <meta name="keywords" content="medispa bexley, botox sydney, fillers bexley, skin tightening, teeth whitening, body contouring, anti-aging treatments, cosmopolitan beauty lounge, hifu treatment, facial spa sydney">
     <meta name="author" content="Cosmopolitan Beauty Lounge">
@@ -12,12 +15,27 @@
     <meta property="og:image" content="./assets/images/og-image.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://cosmobeautylounge.com.au">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="dns-prefetch" href="https://www.google.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet"></noscript>
     <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" fetchpriority="high">
-    <link rel="preload" as="image" href="./assets/images/spa-treatment.jpg">
-    <link rel="preload" as="image" href="./assets/images/botox-fillers.jpg">
+    <link rel="preload" as="image" href="./assets/images/2.png" fetchpriority="high">
+    <style>
+        /* Critical CSS for above-the-fold content */
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#1F2937;line-height:1.6;overflow-x:hidden;background:#fff;-webkit-font-smoothing:antialiased}
+        .navbar{position:fixed;top:20px;left:50%;transform:translateX(-50%);width:auto;max-width:90%;z-index:1000;background:rgba(255,255,255,.8);backdrop-filter:blur(25px);box-shadow:0 10px 50px rgba(107,147,140,.2),0 0 0 1px rgba(107,147,140,.2),0 0 40px rgba(107,147,140,.15);border-radius:50px}
+        .logo{display:flex;align-items:center;cursor:pointer}
+        .logo-image{height:40px;width:auto;object-fit:contain}
+        .hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fff;padding-top:80px}
+        .hero-background{position:absolute;top:0;left:0;right:0;bottom:0;background:url('./assets/images/hero-bg.jpg') center/cover no-repeat}
+        .hero-overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(to bottom,rgba(255,255,255,.88) 0%,rgba(255,255,255,.85) 100%)}
+        .hero-content{position:relative;z-index:2;padding:100px 20px 80px;text-align:center;max-width:1200px;margin:0 auto}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    </style>
     <link rel="stylesheet" href="./css/styles.css">
     <title>Cosmopolitan Beauty Lounge | Premium Medispa in Bexley NSW</title>
     
@@ -73,8 +91,7 @@
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="#home" class="logo">
-                <span class="logo-text">COSMOPOLITAN</span>
-                <span class="logo-subtitle">Beauty Lounge</span>
+                <img src="./assets/images/2.png" alt="Cosmopolitan Beauty Lounge" class="logo-image">
             </a>
             
             <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
@@ -210,7 +227,7 @@
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-image-wrapper">
-                        <img src="./assets/images/spa-treatment.jpg" alt="Luxury Spa Treatment" class="service-image" width="600" height="400" loading="eager" fetchpriority="high" decoding="async">
+                        <img src="./assets/images/spa-treatment.jpg" alt="Luxury Spa Treatment" class="service-image" width="600" height="400" loading="lazy" decoding="async">
                         <div class="service-badge">Most Popular</div>
                     </div>
                     <div class="service-content">
@@ -228,7 +245,7 @@
 
                 <div class="service-card">
                     <div class="service-image-wrapper">
-                        <img src="./assets/images/botox-fillers.jpg" alt="Botox and Dermal Fillers" class="service-image" width="600" height="400" loading="eager" fetchpriority="high" decoding="async">
+                        <img src="./assets/images/botox-fillers.jpg" alt="Botox and Dermal Fillers" class="service-image" width="600" height="400" loading="lazy" decoding="async">
                     </div>
                     <div class="service-content">
                         <h3>Botox & Dermal Fillers</h3>
@@ -684,6 +701,6 @@
 
     <a href="#home" class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">↑</a>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 </body>
 </html>
